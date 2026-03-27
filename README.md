@@ -49,11 +49,10 @@ That's why I built **FORGE**. It's a prototype designed to let anyone have a per
 
 ### 📱 界面预览 / Screenshots
 
-<p align="center">
-  <img src="./public/screenshot-dashboard.webp" width="30%" alt="Dashboard" />
-  <img src="./public/screenshot-pacing.png" width="30%" alt="Pacing Engine" />
-  <img src="./public/screenshot-pr.png" width="30%" alt="PR Tracker" />
-</p>
+| 首页 Dashboard (Mobile) | 核心功能 Core Features (Desktop) |
+| :---: | :---: |
+| <img src="./public/screenshot-dashboard.webp" width="250" alt="Dashboard" /> | <img src="./public/screenshot-pacing.png" width="500" alt="Pacing Engine" /><br><br><img src="./public/screenshot-pr.png" width="500" alt="PR Tracker" /> |
+
 
 ### 💬 交流与反馈
 
