@@ -1,0 +1,27 @@
+node_modules
+# Keep environment variables out of version control
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+
+# Next.js build output
+.next
+out
+
+# Database files
+*.db
+*.db-journal
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Test / debug scripts
+test-*.js
+fix-seed.js
+seed-test-user.js
+test-wod.json
+
+/src/generated/prisma

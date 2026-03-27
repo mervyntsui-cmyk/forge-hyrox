@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC | 运动员档案与目标设定</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Manrope:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#62ff96",
+              "on-primary-fixed-variant": "#524600",
+              "on-background": "#e5e2e1",
+              "inverse-on-surface": "#313030",
+              "error": "#ffb4ab",
+              "surface-container-high": "#2a2a2a",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed": "#e5e2e1",
+              "outline-variant": "#4c4732",
+              "surface": "#131313",
+              "tertiary": "#f3fff0",
+              "inverse-primary": "#6d5e00",
+              "surface-container-highest": "#353535",
+              "secondary": "#c8c6c5",
+              "error-container": "#93000a",
+              "background": "#131313",
+              "on-tertiary-fixed-variant": "#005226",
+              "primary-fixed-dim": "#e3c600",
+              "tertiary-container": "#3efe8a",
+              "on-secondary-fixed-variant": "#474646",
+              "tertiary-fixed-dim": "#00e475",
+              "on-error-container": "#ffdad6",
+              "primary-fixed": "#ffe24a",
+              "on-error": "#690005",
+              "inverse-surface": "#e5e2e1",
+              "surface-bright": "#393939",
+              "primary-container": "#ffde00",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-secondary-container": "#bab8b7",
+              "on-tertiary": "#003918",
+              "on-primary": "#393000",
+              "outline": "#989177",
+              "secondary-container": "#4a4949",
+              "primary": "#fffaf8",
+              "surface-variant": "#353535",
+              "surface-tint": "#e3c600",
+              "surface-container-lowest": "#0e0e0e",
+              "on-secondary-fixed": "#1c1b1b",
+              "surface-container": "#20201f",
+              "on-primary-fixed": "#211b00",
+              "on-tertiary-container": "#007237",
+              "on-tertiary-fixed": "#00210b",
+              "on-surface-variant": "#cfc6ab",
+              "on-secondary": "#313030",
+              "on-surface": "#e5e2e1",
+              "on-primary-container": "#716200",
+              "surface-dim": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(180deg, #ffe24a 0%, #ffde00 100%);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Section -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313] shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 h-16 w-full max-w-none ml-auto mr-auto">
+<div class="flex items-center gap-2 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[#FFDE00]" data-icon="bolt">bolt</span>
+<span class="font-['Inter'] font-black tracking-tighter uppercase text-2xl text-[#FFDE00] italic">KINETIC</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-[#FFDE00] hover:opacity-80 transition-opacity cursor-pointer">
+<img alt="User Profile Avatar" data-alt="portrait of a determined professional athlete looking directly at the camera in dramatic gym lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCUfI_auoDzZUS2lO50R0E1JA6XdPI8GfAfTa0oDekMHU5_QaK4ZzIB84j9qtF0B-9cyzlPIdv8N4euMsN1wM4UPjg0RYz8I5vE3uFt7zQA1BhQcXOoIMXjMIbav9SiiCnEJCfMZmvczW9lHYMK8dBlfUFatjuikW-hIPLY7Kq7h1HU9I5clu6O_j1HRnUOVGoIZjDqko_rN7eSD5KvnfEB6n1bNZsMnFp-2-U-34P4aSmvnF8cZuYw2YoWjOEtgrRFVGb-HDGBmIL"/>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Progress Header -->
+<header class="mb-12">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-1 block">ATHLETE ONBOARDING</span>
+<h1 class="font-headline text-4xl font-black tracking-tighter uppercase leading-none">档案与目标</h1>
+</div>
+<span class="font-headline text-2xl font-black text-primary-container italic">65%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[65%] shadow-[0_0_15px_rgba(255,222,0,0.4)]"></div>
+</div>
+</header>
+<!-- Step 1: Profile Details -->
+<section class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-headline font-black text-primary-container">01</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">完善运动员档案</h2>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-5 bg-surface-container-low rounded-xl group focus-within:ring-2 ring-primary-container/30 transition-all">
+<label class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-2 block">性别</label>
+<select class="w-full bg-transparent border-none p-0 font-body text-lg font-semibold focus:ring-0 appearance-none cursor-pointer">
+<option value="male">男</option>
+<option value="female">女</option>
+<option value="non-binary">其他</option>
+</select>
+</div>
+<div class="p-5 bg-surface-container-low rounded-xl focus-within:ring-2 ring-primary-container/30 transition-all">
+<label class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-2 block">当前体重 (KG)</label>
+<input class="w-full bg-transparent border-none p-0 font-body text-lg font-semibold focus:ring-0" placeholder="75.0" type="number"/>
+</div>
+</div>
+<div class="p-5 bg-surface-container-low rounded-xl">
+<label class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-4 block">训练级别</label>
+<div class="flex gap-2 overflow-x-auto hide-scrollbar">
+<button class="px-6 py-2 rounded-lg bg-primary-container text-on-primary-container font-bold text-xs whitespace-nowrap">入门级</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest text-on-surface font-bold text-xs whitespace-nowrap hover:bg-surface-bright transition-colors">进阶</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest text-on-surface font-bold text-xs whitespace-nowrap hover:bg-surface-bright transition-colors">精英</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest text-on-surface font-bold text-xs whitespace-nowrap hover:bg-surface-bright transition-colors">职业</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Step 2: Goal Setting -->
+<section class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-headline font-black text-primary-container">02</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">设定竞赛目标</h2>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 border-l-4 border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-2 block">目标比赛日期</label>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary-container" data-icon="calendar_today">calendar_today</span>
+<input class="bg-transparent border-none p-0 font-headline text-2xl font-black focus:ring-0 uppercase tracking-tighter" type="date"/>
+</div>
+</div>
+<div>
+<label class="font-label text-[10px] font-bold tracking-widest uppercase text-outline mb-2 block">目标完赛时间</label>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="timer">timer</span>
+<input class="bg-transparent border-none p-0 font-headline text-2xl font-black focus:ring-0 w-32 tracking-tighter" placeholder="01:15:00" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Step 3: PFT Metrics -->
+<section class="mb-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-headline font-black text-primary-container">03</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">PFT 基础体能数据</h2>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- 1KM Run Card -->
+<div class="p-5 bg-surface-container-low rounded-xl flex items-center justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="directions_run">directions_run</span>
+</div>
+<div>
+<p class="font-headline font-black text-lg leading-tight">1KM 跑</p>
+<p class="font-label text-[10px] text-outline tracking-wider uppercase">个人最好成绩</p>
+</div>
+</div>
+<div class="flex items-end gap-1">
+<input class="bg-transparent border-none p-0 font-headline text-2xl font-black text-right focus:ring-0 w-20" placeholder="3:45" type="text"/>
+<span class="font-label text-xs text-outline mb-1">MIN</span>
+</div>
+</div>
+<!-- Rowing Card -->
+<div class="p-5 bg-surface-container-low rounded-xl flex items-center justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="rowing">rowing</span>
+</div>
+<div>
+<p class="font-headline font-black text-lg leading-tight">1KM 划船</p>
+<p class="font-label text-[10px] text-outline tracking-wider uppercase">个人最好成绩</p>
+</div>
+</div>
+<div class="flex items-end gap-1">
+<input class="bg-transparent border-none p-0 font-headline text-2xl font-black text-right focus:ring-0 w-20" placeholder="3:20" type="text"/>
+<span class="font-label text-xs text-outline mb-1">MIN</span>
+</div>
+</div>
+<!-- Strength Card -->
+<div class="p-5 bg-surface-container-low rounded-xl flex items-center justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+</div>
+<div>
+<p class="font-headline font-black text-lg leading-tight">深蹲波比跳</p>
+<p class="font-label text-[10px] text-outline tracking-wider uppercase">1分钟最大次数</p>
+</div>
+</div>
+<div class="flex items-end gap-1">
+<input class="bg-transparent border-none p-0 font-headline text-2xl font-black text-right focus:ring-0 w-20" placeholder="24" type="number"/>
+<span class="font-label text-xs text-outline mb-1">REPS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Action -->
+<button class="w-full kinetic-gradient py-6 rounded-xl flex items-center justify-center gap-3 active:scale-[0.98] transition-all shadow-[0_20px_40px_rgba(255,222,0,0.2)]">
+<span class="font-headline font-black text-on-primary-container text-xl tracking-tighter uppercase">生成我的计划</span>
+<span class="material-symbols-outlined text-on-primary-container font-black" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</main>
+<!-- BottomNavBar Section -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#131313]/90 backdrop-blur-xl flex justify-around items-center px-4 pb-safe z-50 rounded-t-xl shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:text-[#FFDE00] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fitness_center">fitness_center</span>
+<span class="font-['Manrope'] text-[10px] font-bold tracking-widest uppercase">训练</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:text-[#FFDE00] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history_edu">history_edu</span>
+<span class="font-['Manrope'] text-[10px] font-bold tracking-widest uppercase">日志</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:text-[#FFDE00] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="speed">speed</span>
+<span class="font-['Manrope'] text-[10px] font-bold tracking-widest uppercase">策略</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#FFDE00] scale-110 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Manrope'] text-[10px] font-bold tracking-widest uppercase">我的</span>
+</a>
+</nav>
+</body></html>
