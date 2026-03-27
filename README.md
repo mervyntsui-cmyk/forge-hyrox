@@ -47,6 +47,14 @@ That's why I built **FORGE**. It's a prototype designed to let anyone have a per
 - **赛前智能减量** — 比赛前 2 周自动进入 Tapering 减量模式，削减 40% 容量以储备体能。
 - **中英文双语** — 界面与 AI 生成内容全面支持中文 ⇔ English 实时切换。
 
+### 📱 界面预览 / Screenshots
+
+<p align="center">
+  <img src="./public/screenshot-dashboard.webp" width="30%" alt="Dashboard" />
+  <img src="./public/screenshot-pacing.png" width="30%" alt="Pacing Engine" />
+  <img src="./public/screenshot-pr.png" width="30%" alt="PR Tracker" />
+</p>
+
 ### 💬 交流与反馈
 
 我只是一个热爱 HYROX 和折腾 AI 的技术爱好者。这是一个早期的 Prototype（原型），如果你也对 HYROX 或 AI 应用开发感兴趣，或者用了 FORGE 觉得有想吐槽/建议的地方，**非常欢迎加我微信交流！**
