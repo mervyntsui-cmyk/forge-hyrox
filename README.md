@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🔥 FORGE
+# 🔥 FORGE v.1.0
 
-**Your Pocket AI HYROX Coach | 你的随身 AI 混拓教练**
+**Your Pocket AI HYROX Coach | 你的随身 AI 混拓教练** （欢迎大家contribute开发这个web app）
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)](https://www.typescriptlang.org)
